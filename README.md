@@ -64,7 +64,7 @@
     
      ![Diiferan Angles](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/different%20Angles.png)
     
-   6. Now, lets used Moveit in Rvis which will help for kinematics, motion planning, trajectory processing and controlling the robot 
+6. Now, lets used Moveit in Rvis which will help for kinematics, motion planning, trajectory processing and controlling the robot 
      * `roslaunch moveit_pkg demo.launch`
      * Moveit:
 
