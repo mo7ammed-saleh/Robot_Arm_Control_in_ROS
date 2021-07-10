@@ -4,7 +4,7 @@
 ## Task Requirements: 
   - Control a robot arm actuator using Robot Operating System (ROS) platform with Rviz, Gazebo and Moveit Simulator.  
 
-## Steps:
+## Detailed Steps:
   1. Install Ubuntu to work with ROS platform. I will use Ubuntu-18.04 (You can install Ubuntu with Windows in a virtual machine like Virtual box or Vmware).
   2. Instal [ROS Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) using the commands bellow in the terminal (Melodic is the version of ROS that correspond with Ubuntu-18.04).
      * `sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
@@ -60,7 +60,7 @@
     
      ![Rviz with Gazebo](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Rviz%20with%20Gazebo%20Simulator.png)
      
-    * Diiferan Angles:
+    * Different Angles:
     
      ![Diiferan Angles](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/different%20Angles.png)
     
