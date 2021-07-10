@@ -1,5 +1,5 @@
 # Robot Arm Control Using ROS
-This Repository will explain my first task in Robotics and AI department at  [SMART METHODS](https://github.com/smart-methods) summer training.
+**This Repository will explain my first task in Robotics and AI department at  [SMART METHODS](https://github.com/smart-methods) summer training.**
 
 ## Task Requirements: 
   - Control a robot arm actuator using Robot Operating System (ROS) platform with Rviz, Gazebo and Moveit Simulator.  
