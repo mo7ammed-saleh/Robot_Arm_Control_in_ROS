@@ -36,20 +36,33 @@ This Repository will explain my first task in Robotics and AI department at  [SM
    * At the end of the file add the follwing line`source /home/mo7d_saleh/catkin_ws/devel/setup.bash` then press ctrl + o, (Note that mo7d_saleh is my ubuntu username).
    * `source ~/.bashrc`
    * To lunch the Rviz simulator with slider motors control (joint_state_publisher) use this command `roslaunch robot_arm_pkg check_motors.launch`
-   * ![Circuit Diagram]()
+   * Rviz Simulator:
+   
+   ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Control%20Arn%20in%20Rviz%20.png)
    
 4. To control the robot arm physically connect the circuit diagram with your arm and the install Arduino IDE and ros_lib.
-   * ![Circuit Diagram]() 
+   * Circuit Wiring:
+   
+   ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/circuit.png) 
+   
    * Install Arduino IDE software `wget https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz` then `tar -xvf arduino-1.8.12-linux64.tar.xz` then `cd arduino-1.8.12/` then `sudo ./install.sh`
    * Download rosserial to communicate with arduino using the following commands `sudo apt-get install ros-melodic-rosserial-arduino` then `sudo apt-get install ros-melodic-rosserial`
    * Download ros_lib on arduino software using the following commands `cd Arduino/libraries` then `rm -rf ros_lib` then `rosrun rosserial_arduino make_libraries.py .`
    * To upload the Arduino code, select the Arduino port to be used on Ubuntu system, then we need to change the permissions (it might be ttyACM) by `ls -l /dev |grep ttyUSB` then `sudo chmod -R 777 /dev/ttyUSB0` then upload the code from Arduino IDE
    * Run Rviz `roslaunch robot_arm_pkg check_motors.launch`  `rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200`
   
-5. Control the motors in Gazebo simulator 
+5. Control the Arm in Gazebo simulator (real simulation).
     * Change the permission `cd catkin/src/arduino_robot_arm/robot_arm_pkg/scripts` then `sudo chmod +x joint_states_to_gazebo.py`
     * Open new terminal to launch Rviz `roslaunch robot_arm_pkg check_motors.launch`
     * Open new terminal to launch Gazebo `roslaunch robot_arm_pkg check_motors_gazebo.launch`
-    * `rosrun robot_arm_pkg joint_states_to_gazebo.py` 
-    * ![Circuit Diagram]()
-
+    * Then run the python script to communicate with Gazebo `rosrun robot_arm_pkg joint_states_to_gazebo.py` 
+    * Rviz with Gazebo:
+    
+     ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Rviz%20with%20Gazebo%20Simulator.png)
+     
+    * Diiferan Angles:
+    
+    * ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/different%20Angles.png)
+    
+   6. Now, lets used Moveit in Rvis which will help for kinematics, motion planning, trajectory processing and controlling the robot 
+     * `roslaunch moveit_pkg demo.launch`
