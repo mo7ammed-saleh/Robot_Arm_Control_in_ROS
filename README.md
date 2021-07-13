@@ -1,5 +1,5 @@
 # Robot Arm Control Using ROS
-**This Repository will explain my first task in Robotics and AI department at  [SMART METHODS](https://github.com/smart-methods) summer training.**
+**This Repository will explain my first task in Robotics and AI department at [SMART METHODS](https://github.com/smart-methods) summer training.**
 
 ## Task Requirements: 
   - Control a robot arm actuator using Robot Operating System (ROS) platform with Rviz, Gazebo and Moveit Simulator.  
@@ -33,14 +33,14 @@
    * `sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher`
    * `sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control`
    * open a file (bashrc) : `sudo nano ~/.bashrc`.
-   * At the end of the file add the follwing line`source /home/mo7dsaleh/catkin_ws/devel/setup.bash` then press ctrl + o, (Note that mo7d_saleh is my ubuntu username).
+   * At the end of the file add the follwing line`source /home/mo7dsaleh/catkin_ws/devel/setup.bash` then press ctrl + o, (Note that mo7dsaleh is my ubuntu username).
    * `source ~/.bashrc`
    * To lunch the Rviz simulator with slider motors control (joint_state_publisher) use this command `roslaunch robot_arm_pkg check_motors.launch`
    * Rviz Simulator:
    
    ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/Control%20Arn%20in%20Rviz%20.png)
    
-4. To control the robot arm physically connect the circuit diagram with your arm and the install Arduino IDE and ros_lib.
+4. To control the robot arm physically if you need, connect the circuit diagram with your arm and the install Arduino IDE and ros_lib.
    * Circuit Wiring:
    
    ![Circuit Diagram](https://github.com/mo7ammed-saleh/Robot_Arm_Control_in_ROS/blob/main/Simulation%20imgs/circuit.png) 
